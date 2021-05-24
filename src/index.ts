@@ -1,8 +1,5 @@
-document.getElementById("app").innerHTML = `
-<h1>Hello Parcel!</h1>
-<div>
-  Look
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>
-  for more info about Parcel.
-</div>
-`;
+// this file is an example that uses the library in /lib/
+
+import Inventory from "./lib/Inventory";
+
+let inv = new Inventory();
