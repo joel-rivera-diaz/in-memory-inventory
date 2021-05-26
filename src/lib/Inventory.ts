@@ -1,28 +1,28 @@
-import { Item } from "./Item";
-
+/**
+ * @class Inventory
+ * This class keeps track of Items *quantities*
+ */
 class Inventory {
-  items: Array<Item>;
+  items: itemDictionary;
 
-  constructor(initialItems: Array<Item>) {
+  constructor(initialItems: itemDictionary) {
     this.items = initialItems;
   }
 
-  add(items: Array<Item>) {
-    for (const item of items) {
-    }
-  }
-  // add( name: String, quantity: Number ){
-
-  // }
-
-  itemExists(item: Item) {
-    for (const existingItem of this.items) {
-      if (item.name === existingItem.name) {
-        return true;
+  addItems(itemsToAdd: itemDictionary) {
+    for (let k of Object.keys(itemsToAdd)) {
+      if (itemsToAdd[k]) {
+        this.items[k] += itemsToAdd[k];
+      } else {
+        this.items[k] = itemsToAdd[k];
       }
     }
-    return false;
   }
+  addItem(name: string, quantity: number) {}
+}
+
+interface itemDictionary {
+  [key: string]: number;
 }
 
 export { Inventory };
