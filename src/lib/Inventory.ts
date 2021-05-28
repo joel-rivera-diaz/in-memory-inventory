@@ -11,14 +11,21 @@ class Inventory {
 
   addItems(itemsToAdd: itemDictionary) {
     for (let k of Object.keys(itemsToAdd)) {
-      if (itemsToAdd[k]) {
+      if (this.items[k]) {
         this.items[k] += itemsToAdd[k];
       } else {
         this.items[k] = itemsToAdd[k];
       }
     }
   }
-  addItem(name: string, quantity: number) {}
+
+  getAllItems(): itemDictionary {
+    return { ...this.items };
+  }
+
+  getItem(name: string): number {
+    return this.items[name] ? this.items[name] : 0;
+  }
 }
 
 interface itemDictionary {
