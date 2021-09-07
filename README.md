@@ -1,7 +1,7 @@
 in-memory-inventory
 ===================
 
-A simple in-memory inventory system.
+A simple in-memory inventory system. The library is designed to keep track of quantities. 
 
 Usage
 -----
@@ -9,6 +9,7 @@ Include the library in you *typeScript* project. Use its API as shown in the bel
 
 Examples
 --------
+###Example #1
 ```js
 // import the library
 
