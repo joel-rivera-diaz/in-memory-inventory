@@ -9,7 +9,7 @@ Include the library in you *typeScript* project. Use its API as shown in the bel
 
 Examples
 --------
-```
+```js
 // import the library
 
 import { Inventory } from "./lib/Inventory";
