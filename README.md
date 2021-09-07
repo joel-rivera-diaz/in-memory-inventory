@@ -5,11 +5,11 @@ A simple in-memory inventory system. The library is designed to keep track of qu
 
 Usage
 -----
-Include the library in you *typeScript* project. Use its API as shown in the below example:
+Include the library in you **typeScript** project. Use its API as shown in the below example:
 
 Examples
 --------
-###Example #1
+### Example #1
 ```js
 // import the library
 
