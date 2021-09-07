@@ -38,8 +38,9 @@ API
 ---
 **Class Inventory**
 Public Methods:
-- **addItems()** - params: <Object> , items you wish to add. Each property represents a different item.
-- **getItem()** - params: <String>, the item name you want to get. Returns the amount.
-- **getAllItems()** -params: none. Returns an <Object> with all items.
+- **addItems()** - params: Object , items you wish to add. Each property represents a different item.
+- **removeItems()** - works like addItems() but it substracts instead of adding.
+- **getItem()** - params: String, the item name you want to get. Returns the amount.
+- **getAllItems()** -params: none. Returns an Object with all items.
 
 
