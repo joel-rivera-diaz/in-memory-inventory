@@ -1,7 +1,7 @@
 in-memory-inventory
 ===================
 
-A simple in-memory inventory system. The library is designed to keep track of quantities. 
+A simple in-memory inventory system. The library is designed to keep track of **quantities**. 
 
 Usage
 -----
@@ -10,6 +10,8 @@ Include the library in you **typeScript** project. Use its API as shown in the b
 Example
 --------
 ```js
+// Example
+
 // import the library
 import { Inventory } from "./lib/Inventory";
 
@@ -30,6 +32,21 @@ inv.addItems({
 
 inv.getItem('apples');  // => 5
 inv.getItem('coins');  //  => 13
+
+
+// You can also remove items:
+inv.removeItems({
+	'apples': 4,
+	'coins': 12
+});
+
+inv.getItem('apples');  // => 1
+inv.getItem('coins');  //  => 1
+
+
+// finally, you can get all items at once:
+inv.getAllItems(); // => { 1, 1 }
+
 
 
 ```

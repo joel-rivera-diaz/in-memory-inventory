@@ -17,7 +17,17 @@ class Inventory {
         this.items[k] = itemsToAdd[k];
       }
     }
-  }
+	}
+	
+  removeItems(itemsToRemove: itemDictionary) {
+		for (let k of Object.keys(itemsToRemove)) {
+      if (this.items[k]) {
+        this.items[k] -= itemsToRemove[k];
+      } else {
+        this.items[k] = itemsToRemove[k];
+      }
+    }
+	}
 
   getAllItems(): itemDictionary {
     return { ...this.items };
